@@ -1,0 +1,29 @@
+[user]
+	name = Maurice Svay
+	email = maurice@svay.com
+
+[credential]
+	helper = osxkeychain
+
+[core]
+	editor = nano
+	pager = cat
+	quotepath = false
+	excludesfile = ~/.dotfiles/git/gitignore-global
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	fp = format-patch
+	lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
+
+[push]
+	default = simple
+

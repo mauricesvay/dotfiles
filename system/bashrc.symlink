@@ -1,0 +1,13 @@
+#Path
+source ~/.dotfiles/system/path.sh
+
+#Aliases
+source ~/.dotfiles/system/aliases.sh
+
+#Editor
+export EDITOR='nano'
+
+#Git
+source "$HOME/.dotfiles/git/git-completion.bash" &&
+export GIT_PS1_SHOWDIRTYSTATE=1 GIT_PS1_SHOWSTASHSTATE=1 GIT_PS1_SHOWUNTRACKEDFILES=1 &&
+export PS1='\[\e[1;32m\]\u\[\e[0;39m\]@\[\e[1;36m\]\h\[\e[0;39m\]:\[\e[1;33m\]\w\[\e[0;39m\]\[\e[1;35m\]$(__git_ps1 " (%s)")\[\e[0;39m\]$'
